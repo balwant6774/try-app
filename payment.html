@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nov-container">
+        <nav class="nav-link">
+            <div class="ind"><span>IND</span>IAN<span class="otp">OTP</span></div>
+            <div class="nav-tools">
+                <ul>
+                    <li class="Balance">Balance 0</li>
+                    <li><button>ADD Money</button></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    
+      <div>
+        <div style="background-color:bisque;" class="pay-rlues">
+            <p>UPI PAYMENTS AVAILABLES</p>
+            
+        </div>
+          
+        <div style="background-color:aquamarine;" class="pay-rlues">
+            <p>MINIMUM RECHARGE 50 RUPEES</p>
+            
+        </div>
+          
+        <div style="background-color:cadetblue;" class="pay-rlues">
+            <p>PAYMENTS ADD INSTANT IN YOUR WALLET</p>
+            
+        </div>   
+      </div>
+
+      <div class="img-container">
+        <div class="img-log">
+            <img src="download.jpg">
+        </div>
+      </div>
+
+      <div class="pay-input">
+        <div class="pay-input-container">
+            <input type="text" id="utr-input" placeholder="ENTER UTR NO..">
+            <button onclick="submitdata()">submit</button>
+        </div>
+      </div>
+      <div  id="paydiv"> 
+        
+    </div>
+      
+      <div>
+
+        <div class="pay-rlues">
+            <p style="color:blue">UPI id : snabk@ybl</p>     
+        </div> 
+
+        <div  style="background-color: greenyellow;" class="pay-rlues">
+            <p style="color: brown">Pay : snabk@ybl</p>     
+        </div> 
+
+        <div style="background-color: blue;" class="pay-rlues">
+            <p>ENTER UTR NUMBER.....</p>  
+             
+        </div>   
+        <div style="background-color: pink;" class="pay-rlues">
+            <p>ENTER UTR OR TRANSITION NUMBER.....</p>
+             
+        </div> 
+          
+        <div style="background-color: green;" class="pay-rlues">
+            <p>IF PAYMENTS UNDER 50 FAILED.....</p>
+             
+        </div> 
+
+        <div style="background-color:blueviolet;" class="pay-rlues">
+            <p>RECHARGE 50 RUPEES MINIMUM .....</p>    
+        </div> 
+   
+
+      </div>
+      
+      <script>
+        const paydiv = document.getElementById("paydiv");
+        const datavalue = document.getElementById("utr-input");
+        let valll = 1;
+          const submitdata  = () =>{
+            
+            if(datavalue.value && valll==1){  
+             paydiv.classList.add("divpay");
+               const div= document.createElement("div");
+               div.innerText = "Succefully Add wait  A min Check the UTR NUMBER RIGHT OR WRONG";
+               paydiv.appendChild(div);
+               valll++;
+            }
+            if(!datavalue.value){
+                alert("PLEASE ENTER THE UTR NUMBER:");
+            }
+        }
+      </script>
+    </body>
+    </html>

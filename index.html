@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nov-container">
+        <nav class="nav-link">
+            <div class="ind"><span>IND</span>IAN<span class="otp">OTP</span></div>
+            <div class="nav-tools">
+                <ul>
+                    <li class="Balance">Balance 0</li>
+                    <li><button  onclick="summdata()">ADD Money</button></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+
+      <div class="form-container">
+        <div class="form-input">
+            <input type="text"  placeholder="Enter Username" id="username">
+            <input type="password"placeholder="Enter Your password" id="password"> <br>
+            <button onclick="sunmiiidata()" id="summmit">submit</button>
+        </div>
+      </div>
+
+
+      <footer class="footer-2">
+        <p>ALL OPT AVAILABLES !</p>
+        <p>INDIAN OTP AVAILABLES !</p>
+        <p>OPT SELLER !</p>
+        <p>RANDOM OPT AVAILABLES !</p>
+    </footer>
+
+    <footer class="footer">
+        <p>Copyright @2023</p>
+    </footer>
+    <footer class="footer-2">
+        <p>OPT LIMITED COMPANY !</p>
+        <p>OPT MORE SELES COMPANY !</p>
+        <p>OPT SELLER COMPANY !</p>
+        <p>OPT COO COMPANY !</p>
+    </footer>
+</div>
+<script>  
+ const summdata = () =>{
+  alert("Login The From");
+ }
+
+ const username = document.getElementById("username");
+ const password = document.getElementById("password");
+ const summmit = document.getElementById("summmit");
+//  console.log(username);
+//  console.log(password);
+ const sunmiiidata = () =>{
+    if(username.value && password.value ){
+        window.open("odata.html");
+    }else{
+        alert("fill the form");
+    }
+    
+    
+
+ }
+</script> 
+</body>
+</html>

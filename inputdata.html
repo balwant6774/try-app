@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="all-contain">
+    <div class="nov-container">
+        <nav class="nav-link">
+            <div class="ind"><span>IND</span>IAN<span class="otp">OTP</span></div>
+            <div class="nav-tools">
+                <ul>
+                    <li class="Balance">Balance 0</li>
+                    <li><a href="payment.html"><button>ADD Money</button></a></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+
+      <div class="container">
+    <div class="input-container">
+        <div class="input-sub-container">
+            <input type="text" readonly id="input-data"><br>
+            <button onclick="get_number()">Get Number</button> <br>
+        </div>
+            <div class="otp-section">
+            <input type="text" readonly> <br>
+            <button onclick="send_otp()">Send OTP</button>
+        </div>
+    </div>
+    </div>
+    <footer class="footer-2">
+        <p>ALL OPT AVAILABLES !</p>
+        <p>INDIAN OTP AVAILABLES !</p>
+        <p>OPT SELLER !</p>
+        <p>RANDOM OPT AVAILABLES !</p>
+    </footer>
+
+    <footer class="footer">
+        <p>Copyright @2023</p>
+    </footer>
+    <footer class="footer-2">
+        <p>OPT LIMITED COMPANY !</p>
+        <p>OPT MORE SELES COMPANY !</p>
+        <p>OPT SELLER COMPANY !</p>
+        <p>OPT COO COMPANY !</p>
+    </footer>
+</div>
+<script>
+    const input_value = document.getElementById("input-data");
+    console.log(input_value);
+   
+    const get_number = () =>{
+    let random = Math.floor(Math.random()*999999);
+    random = "9872" +random;
+    input_value.value = random;
+    }
+    get_number();
+
+    const send_otp = () =>{
+        alert("PLEASE ADD MONEY ! |  First ADD MONEY |  ")
+    }
+</script>
+</body>
+</html>
